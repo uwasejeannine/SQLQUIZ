@@ -1,0 +1,37 @@
+Write a query to obtain all the records from the above table
+
+=> SELECT name, town, marks FROM Student WHERE name=5;
+
+Write a query to obtain the names and marks of all the students
+
+=>SELECT name, marks FROM Student Where Students <= (SELECT COUNT(*) FROM Students)
+
+Write a query to obtain all records of the students who scored over 85 marks
+=>SELECT name, town ,Marks FROM Student
+WHERE marks >80 ORDER BY RIGHT(name,3), town ASC ;
+
+Write a query to return all the unique towns from the table
+=>SELECT town FROM  students
+
+4. Write a query to obtain all the names of the students from ruiru
+=> SELECT names from Student WHERE town='ruiru';
+
+Write a query to return all the students who scored over 80 marks from
+Lodwar
+
+=>SELECT name,FROM Student WHERE marks >80 town="Lodwar";
+
+Write a query to obtain the names of the students who scored above 70 marks
+outside Nairobi
+
+=> SELECT name FROM Students WHERE marks > 70 ORDER BY RIGHT(Name, 3), town='Nairobi';
+
+Write a query to obtain the names of the students who either reside in Nairobi
+ior scored above 80 marks
+
+=>SELECT name  FROM Student WHERE marks>80 town='Nairobi
+
+
+
+
+
